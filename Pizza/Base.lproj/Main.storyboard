@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Mg-GJ-VQs" userLabel="previous view">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFF-6C-efo">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" image="Image" style="plain" id="l9Q-9C-m8W"/>
+                                    <barButtonItem title="Item" image="circle" id="Saa-EH-jUS"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Mg-GJ-VQs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OtS-Ef-Znr"/>
+                            <constraint firstItem="JFF-6C-efo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RgD-CY-LBy"/>
+                            <constraint firstItem="8Mg-GJ-VQs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Szx-Lg-oZG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JFF-6C-efo" secondAttribute="bottom" id="T7L-of-tgC"/>
+                            <constraint firstItem="8Mg-GJ-VQs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WqR-Xl-5SX"/>
+                            <constraint firstItem="JFF-6C-efo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fvk-xI-FNF"/>
+                            <constraint firstItem="8Mg-GJ-VQs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wJf-XI-td1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="8Mg-GJ-VQs" id="2mB-QD-COn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="20" height="20"/>
+        <image name="circle" width="16" height="16"/>
+    </resources>
+</document>
